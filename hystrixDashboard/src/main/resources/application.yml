@@ -1,0 +1,10 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: hystrixDashBoard
+
+hystrix:
+  dashBoard:
+    proxy-stream-allow-list: "*"

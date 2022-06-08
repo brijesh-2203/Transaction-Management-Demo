@@ -27,7 +27,7 @@ public class Controller {
 	public User getUSer(@PathVariable("userid") Long userid)
 	{
 		 User user = userservice.getUser(userid);
-		 List<Address> list = this.restTemplate.getForObject("http://localhost:8002/address/user/"+user.getUserid(), List.class);
+		 List<Address> list = this.restTemplate.getForObject("http://addressService/address/user/"+user.getUserid(), List.class);
 		 user.setAddress(list);
 		 return user;
 	}
