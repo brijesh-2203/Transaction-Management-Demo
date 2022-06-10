@@ -1,11 +1,11 @@
 server:
-	port: 8006
-	
+  port: 8006
 spring:
-	application:
-		name: cloudconfig
-	cloud:
-		server:
-			git:
-				uri: https://github.com/brijesh-2203/config-server.git
-				clone-on-start: true
+  application:
+    name: cloudconfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/brijesh-2203/config-server
+          clone-on-start: true

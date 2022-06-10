@@ -1,9 +1,6 @@
 server:
   port: 8004
 
-eureka:
-  instance:
-    hostname: localhost
 
 spring:
   application:
